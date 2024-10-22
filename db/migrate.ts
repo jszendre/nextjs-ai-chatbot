@@ -8,7 +8,6 @@ config({
 });
 
 const runMigrate = async () => {
-  process.exit(0);
   if (!process.env.POSTGRES_URL) {
     throw new Error("POSTGRES_URL is not defined");
   }
